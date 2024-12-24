@@ -13,7 +13,7 @@ window.addEventListener('load', () => {
             document.querySelector('.song').play();
             animationTimeline();
         } else {
-            animationTimeline();
+            window.location.href = 'https://www.google.com';
         }
     });
 });
