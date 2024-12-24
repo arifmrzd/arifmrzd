@@ -1,5 +1,5 @@
 // trigger to play music in the background with sweetalert
-window.addEventListener('load', () => {
+const showConfirmation = () => {
     Swal.fire({
         title: 'ready?',
         icon: 'warning',
@@ -13,10 +13,11 @@ window.addEventListener('load', () => {
             document.querySelector('.song').play();
             animationTimeline();
         } else {
-            window.location.href = 'https://www.google.com';
+            showConfirmation();
         }
     });
-});
+};
+window.addEventListener('load', showConfirmation);
 
 
 // animation timeline
